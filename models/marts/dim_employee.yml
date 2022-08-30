@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: dim_employee
+    columns:
+      - name: employee_sk
+        description: The primary key of employee dimension.
+        tests:
+          - unique
+          - not_null
+
+      - name: businessentityid
+        description: Comercial entity number.
+        tests:
+          - unique
+          - not_null
+
+      - name: salesquota
+        description: Total year Sales projection.
+
+      - name: bonus
+        description: Bonus that will be given case the quota is achieved.
+
+      - name: commissionpct
+        description: Percentage per each sales/order.
+
+      - name: salesytd
+        description: Total sales of the year until the actual moment.
+
+      - name: saleslastyear
+        description: Total sales of last year.
+
+      - name: full_name
+        description: Employee's full name.
+        
+      - name: jobtitle
+        description: Employee's job title.
+      
+      - name: hiredate
+        description: Hire date.
+
+      - name: birthdate
+        description: Employee's birth date.
+
+      - name: gender
+        description: Employee's gender.
+      

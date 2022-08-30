@@ -1,0 +1,84 @@
+version: 2
+
+models:
+  - name: fact_order_detail
+    columns:
+      - name: salesorderid
+        description: The primary key of orders in fact table
+        tests:
+          - not_null
+
+      - name: location_fk
+        description: Foreign key of dim location.
+    
+      - name: customer_fk
+        description: Foreign key of dim customer. 
+
+      - name: employee_fk
+        description: Foreign key of dim employee.
+      
+      - name: reason_fk
+        description: Foreign key of dim salesreason.
+      
+      - name: creditcard_fk
+        description: Foreign key of dim creditcard.
+
+      - name: product_fk
+        description:  Foreign key of dim product.
+
+      - name: salesorderid
+        description: Sales order identification number.
+      
+      - name: customerid
+        description: Customer's identification number.
+      
+      - name: billtoaddressid
+        description: Customers Address bill identification.
+
+      - name: shiptoaddressid
+        description: Customers Address ship identification.
+      
+      - name: shipmethodid
+        description: Ship method identification.
+
+      - name: creditcardid
+        description: Credit card number identification.
+      
+      - name: currencyrateid
+        description: Currency tax identification.
+
+      - name: productid
+        description: Product nuber identification.
+
+      - name: purchaseordernumber
+        description: Reference number of customer purchase.
+      
+      - name: orderdate
+        description: Date that the order was made.
+
+      - name: shipdate
+        description: Order's ship date.
+      
+      - name: duedate
+        description: Order's due date.
+      
+      - name: status
+        description: Order status.
+
+      - name: subtotal
+        description: Order sub total.
+
+      - name: taxamt
+        description: Tax value.
+
+      - name: freight
+        description: Freight value.
+
+      - name: unitprice
+        description: Unit price of product.
+      
+      - name: unitpricediscount
+        description: Discount of unit product.
+
+      - name: totaldue
+        description: total value = unit x unit price

@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_sk
+        description: The primary key of customers.
+        tests:
+          - unique
+          - not_null
+
+      - name: customerid
+        description: The primary key of customers.
+        tests:
+          - unique
+          - not_null
+
+      - name: businessentityid
+        description: Comercial entity number.
+        tests:
+          - unique
+          - not_null
+
+      - name: full_name
+        description: Customer's full name.
+
+      - name: companyname
+        description: Customer's company name.
+
+      - name: emailaddress
+        description: Customer's email.
+      
+      - name: phone
+        description: Customer's phone number.
+
+      - name: adresstype
+        description: Customer Address type.
+
+    

@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_creditcard
+    columns:
+      - name: creditcard_sk
+        description: The primary key of creditcard dimension.
+        tests:
+          - unique
+          - not_null
+
+      - name: creditcardid
+        description: The primary key of creditcard.
+        tests:
+          - unique
+          - not_null
+
+      - name: cardtype
+        description: Card's brand name.
+
+      - name: cardnumber
+        description: Card's number.
+
+      - name: businessentityid
+        description: Businessentity key.
+        tests:
+          - unique
+          - not_null
+
+    

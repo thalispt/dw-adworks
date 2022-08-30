@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: adventure_works_erp
+    schema: ad_works_EL
+    description: This is the adventure works erp postgres database
+    tables:
+      - name: public_address
+        description: Adress's people and information        
+      - name: public_customer
+      - name: public_customeraddress
+      - name: public_product
+      - name: public_productcategory
+      - name: public_productdescription
+      - name: public_productmodel
+      - name: public_productmodelproductdescription
+      - name: public_sales_salesorderheader
+      - name: sales_salesorderheader
+      - name: sales_salesorderdetail
+      - name: sales_salesorderheadersalesreason
+      - name: sales_salesreason
+      - name: sales_salesperson
+      - name: person_person
+      - name: hr_employee
+      - name: person_stateprovince
+      - name: person_address
+      - name: person_countryregion
+      - name: sales_customer
+      - name: sales_creditcard
+      - name: sales_personcreditcard

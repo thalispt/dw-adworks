@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: dim_products
+    columns:
+      - name: product_sk
+        description: The primary key of the dim product
+        tests:
+          - unique
+          - not_null
+
+      - name: productid
+        description: The primary key of products.
+        tests:
+          - unique
+          - not_null
+    
+      - name: product
+        description: Product's name.
+
+      - name: category
+        description: Product's category.
+
+      - name: product_number
+        description: Product's unique identification.
+      
+      - name: color
+        description: Product's color.
+
+      - name: standard_cost
+        description: Product's standard cost.
+
+      - name: list_price
+        description: Product's list price.
+      
+      - name: size
+        description: Product's size.
+      
+      - name: weight
+        description: Product's weight.
+
+      - name: sell_start_date
+        description: Product sell start date.
+
+      - name: sell_end_date
+        description: Product sell end date.       
+
+   

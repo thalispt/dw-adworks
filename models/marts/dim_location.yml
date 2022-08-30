@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: dim_location
+    columns:
+      - name: location_sk
+        description: The primary key of location dimension.
+        tests:
+          - unique
+          - not_null
+
+      - name: addressid
+        description: The primary key of location dimesion.
+        tests:
+          - unique
+          - not_null
+
+      - name: address_ref
+        description: Address description.
+      
+      - name: postalcode
+        description: Address's postal code.
+
+      - name: city
+        description: City's name.
+      
+      - name: stateprovincecode
+        description: State's code.
+      
+      - name: state_name
+        description: State's name.
+      
+      - name: country_name
+        description: DCountry's name.
