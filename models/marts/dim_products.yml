@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_products
+    description: The dimension with products information.
     columns:
       - name: product_sk
         description: The primary key of the dim product

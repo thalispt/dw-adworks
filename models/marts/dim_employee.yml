@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_employee
+    description: The dimension with employee's information.
     columns:
       - name: employee_sk
         description: The primary key of employee dimension.

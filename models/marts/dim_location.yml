@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_location
+    description: The dimension with location information.
     columns:
       - name: location_sk
         description: The primary key of location dimension.

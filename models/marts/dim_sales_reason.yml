@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_sales_reason
+    description: The dimension with types of sales reason.
     columns:
       - name: reason_sk
         description: The primary key of salesreason dimension.
