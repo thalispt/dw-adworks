@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_customer
+    description: The dimension with customer's information.
     columns:
       - name: customer_sk
         description: The primary key of customers.

@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_creditcard
+    description: The dimension with customer's creditcard information.
     columns:
       - name: creditcard_sk
         description: The primary key of creditcard dimension.

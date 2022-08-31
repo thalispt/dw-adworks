@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: fact_order_detail
+    description: The dimension with location information.
     columns:
       - name: salesorderid
         description: The primary key of orders in fact table
@@ -29,26 +30,14 @@ models:
       - name: salesorderid
         description: Sales order identification number.
       
-      - name: customerid
-        description: Customer's identification number.
-      
       - name: billtoaddressid
         description: Customers Address bill identification.
 
       - name: shiptoaddressid
         description: Customers Address ship identification.
       
-      - name: shipmethodid
-        description: Ship method identification.
-
-      - name: creditcardid
-        description: Credit card number identification.
-      
       - name: currencyrateid
         description: Currency tax identification.
-
-      - name: productid
-        description: Product nuber identification.
 
       - name: purchaseordernumber
         description: Reference number of customer purchase.
@@ -65,9 +54,6 @@ models:
       - name: status
         description: Order status.
 
-      - name: subtotal
-        description: Order sub total.
-
       - name: taxamt
         description: Tax value.
 
@@ -80,5 +66,5 @@ models:
       - name: unitpricediscount
         description: Discount of unit product.
 
-      - name: totaldue
-        description: total value = unit x unit price
+      - name: orderqty
+        description: Quantity ordered.
